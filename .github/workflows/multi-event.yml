@@ -13,7 +13,8 @@ jobs:
     steps:
       - name: "Echo Basic Information"
         run: |
-          echo "REF: $GITHUB_REF"
-          echo "Job ID: $GITHUB_JOB"
-          echo "Action: $GITHUB_ACTION"
-          echo "Actor: $GITHUB_ACTOR"
+
+          echo "REF: $env:GITHUB_REF"
+          echo "Job ID: $env:GITHUB_JOB"
+          echo "Action: $env:GITHUB_ACTION"
+          echo "Actor: $env:GITHUB_ACTOR"
